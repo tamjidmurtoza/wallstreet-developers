@@ -94,8 +94,11 @@
   .cs_funfact_in {
     display: flex;
     justify-content: center;
-    gap: 30px 60px;
+    gap: 30px 40px;
     flex-wrap: wrap;
+  }
+  .cs_funfact_item {
+    flex: 1;
   }
 }
 .cs_feature_wrap_section {
@@ -279,11 +282,14 @@ label {
   position: relative;
   z-index: 1;
   @media (max-width: 991px) {
-    padding: 50px 25px;
+    padding: 60px 25px;
   }
   h2 {
     font-size: 60px;
     margin-bottom: 25px;
+    @media (max-width: 420px) {
+      font-size: 48px;
+    }
   }
   h3 {
     font-size: 36px;
@@ -316,7 +322,7 @@ label {
   transition: all 0.3s ease;
   color: #fff;
   @media (max-width: 1200px) {
-    color: red;
+    color: rgba(0, 0, 0, 0.6);
     right: 15px;
   }
 
@@ -341,5 +347,30 @@ label {
 
   &:hover {
     opacity: 0.5;
+  }
+}
+.cs_strategy {
+  padding-top: 140px;
+  @media (max-width: 991px) {
+    padding-top: 90px;
+  }
+  h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  strong {
+    font-weight: 600;
+    color: var(--primary);
+  }
+  p {
+    margin-bottom: 50px;
+  }
+  ol {
+    margin: 0 0 50px 0;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 }

@@ -526,9 +526,14 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px 60px;
+  gap: 30px 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.cs_funfact_wrap .cs_funfact_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .cs_feature_wrap_section {
@@ -761,12 +766,17 @@ label {
 }
 @media (max-width: 991px) {
   .cs_modal_body {
-    padding: 50px 25px;
+    padding: 60px 25px;
   }
 }
 .cs_modal_body h2 {
   font-size: 60px;
   margin-bottom: 25px;
+}
+@media (max-width: 420px) {
+  .cs_modal_body h2 {
+    font-size: 48px;
+  }
 }
 .cs_modal_body h3 {
   font-size: 36px;
@@ -800,7 +810,7 @@ label {
 }
 @media (max-width: 1200px) {
   .close_modal {
-    color: red;
+    color: rgba(0, 0, 0, 0.6);
     right: 15px;
   }
 }
@@ -823,4 +833,30 @@ label {
 }
 .close_modal:hover {
   opacity: 0.5;
+}
+
+.cs_strategy {
+  padding-top: 140px;
+}
+@media (max-width: 991px) {
+  .cs_strategy {
+    padding-top: 90px;
+  }
+}
+.cs_strategy h3 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.cs_strategy strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+.cs_strategy p {
+  margin-bottom: 50px;
+}
+.cs_strategy ol {
+  margin: 0 0 50px 0;
+}
+.cs_strategy ol li:not(:last-child) {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
