@@ -443,6 +443,7 @@ label {
   margin-bottom: 100px;
   @media (max-width: 991px) {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 65px;
   }
   @media (max-width: 991px) {
     grid-template-columns: repeat(1, 1fr);

@@ -939,6 +939,7 @@ label {
 @media (max-width: 991px) {
   .cs_strategies {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 65px;
   }
 }
 @media (max-width: 991px) {
