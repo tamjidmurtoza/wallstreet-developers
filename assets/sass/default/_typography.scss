@@ -1,15 +1,29 @@
 /* Font Integration */
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('../fonts/TiemposHeadline-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Tiempos Headline';
+//   src: url('../fonts/TiemposHeadline-Light.otf') format('opentype');
+//   font-weight: 300;
+//   font-style: normal;
+// }
 @font-face {
   font-family: 'Plus Jakarta Sans';
   src: url('../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf')
     format('truetype');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf')
+    format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -19,6 +33,7 @@ body,
 html {
   color: var(--secondary);
   font-family: var(--secondary-font);
+  background-color: #f2f2f7;
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
@@ -40,16 +55,8 @@ h6 {
   color: var(--primary);
   padding: 0;
   margin: 0 0 20px 0;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.2em;
-  font-family: var(--primary-font);
-}
-
-.cs_primary_font {
-  font-family: var(--primary-font);
-}
-
-.cs_secondary_font {
   font-family: var(--secondary-font);
 }
 

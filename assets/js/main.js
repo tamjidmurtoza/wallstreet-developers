@@ -31,5 +31,24 @@
     $('.close_modal, .cs_modal_overlay').click(function () {
       $('.cs_modal').removeClass('active');
     });
+    stickyHeader();
   });
+  function stickyHeader() {
+    var $window = $(window);
+    var lastScrollTop = 0;
+    var $header = $('.cs_header');
+    var headerHeight = $header.outerHeight() + 30;
+
+    $window.scroll(function () {
+      var windowTop = $window.scrollTop();
+
+      if (windowTop >= headerHeight) {
+        $header.addClass('active');
+      } else {
+        $header.removeClass('active');
+      }
+
+      lastScrollTop = windowTop;
+    });
+  }
 })(jQuery); // End of use strict
