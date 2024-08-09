@@ -60,6 +60,9 @@
     }
   }
 }
+.swiper {
+  cursor: url(../img/drag.png) 16 9, ew-resize !important;
+}
 .cs_hero {
   display: flex;
   align-items: center;
@@ -70,6 +73,7 @@
   background-position: center;
   text-align: center;
   padding-top: 80px;
+  background-color: var(--primary);
   h1 {
     font-size: 63px;
     color: #fff;

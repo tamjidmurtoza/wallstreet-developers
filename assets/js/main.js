@@ -32,6 +32,16 @@
       $('.cs_modal').removeClass('active');
     });
     stickyHeader();
+    // Slider
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      loop: true,
+      speed: 1000,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   });
   function stickyHeader() {
     var $window = $(window);

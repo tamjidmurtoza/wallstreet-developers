@@ -14,6 +14,7 @@
     <!-- Site Title -->
     <title>The Wallstreet Developers</title>
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -30,21 +31,37 @@
         </div>
       </div>
     </header>
-    <div class="cs_hero" style="background-image: url('assets/img/hero_bg.jpeg');">
-      <div class="container">
-        <h1>We are a real estate <br>development group</h1>
-        <p>Focusing on Multi-family homes.</p>
-        <a href="#contact" class="cs_btn">Contact us</a>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="cs_hero" style="background-image: url('assets/img/hero_bg_1.webp');">
+            <div class="container">
+              <h1>We are a real estate <br>development group</h1>
+              <p>Focusing on Multi-family homes.</p>
+              <a href="#contact" class="cs_btn">Contact us</a>
+            </div>
+            <!-- <div class="cs_hero_video">
+              <video autoplay loop muted>
+                <source src="assets/img/video.mp4" type="video/mp4"> -->
+                <!-- You can add multiple source elements for different video formats -->
+                <!-- <source src="your_video.webm" type="video/webm"> -->
+                <!-- <source src="your_video.ogv" type="video/ogg"> -->
+                <!-- Your browser does not support the video tag. -->
+              <!-- </video>
+            </div> -->
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cs_hero" style="background-image: url('assets/img/hero_bg_2.jpeg');">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="cs_hero" style="background-image: url('assets/img/hero_bg_3.jpg');">
+          </div>
+        </div>
       </div>
-      <div class="cs_hero_video">
-        <video autoplay loop muted>
-          <source src="assets/img/video.mp4" type="video/mp4">
-          <!-- You can add multiple source elements for different video formats -->
-          <!-- <source src="your_video.webm" type="video/webm"> -->
-          <!-- <source src="your_video.ogv" type="video/ogg"> -->
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
     <div class="cs_funfact_wrap">
       <div class="container">
@@ -264,6 +281,7 @@
     </div>
     <!-- Scripts -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

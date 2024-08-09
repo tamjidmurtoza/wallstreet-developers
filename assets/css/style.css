@@ -476,6 +476,10 @@ textarea {
     height: 36px;
   }
 }
+.swiper {
+  cursor: url(../img/drag.png) 16 9, ew-resize !important;
+}
+
 .cs_hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,6 +496,7 @@ textarea {
   background-position: center;
   text-align: center;
   padding-top: 80px;
+  background-color: var(--primary);
 }
 .cs_hero h1 {
   font-size: 63px;
