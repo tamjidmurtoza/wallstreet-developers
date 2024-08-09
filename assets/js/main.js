@@ -37,6 +37,9 @@
       slidesPerView: 1,
       loop: true,
       speed: 1000,
+      autoplay: {
+        delay: 4000,
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
